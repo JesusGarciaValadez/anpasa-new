@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'EuroStile';
+  src: url('../fuentes/eurostile.eot?') format('eot'), url('../fuentes/eurostile.woff') format('woff'), url('../fuentes/eurostile.ttf') format('truetype');
+}
+
+
+.euro{
+	font-family:'EuroStile';
+	font-size:50px;
+/*
+	font-weight:bolder;
+	font-style:oblique;
+*/
+	text-transform: uppercase;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>ANPASA</title>
+    <link rev="made" href="mailto:webmaster@anpasa.com" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="ROBOTS" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" > 
+
+<meta http-equiv="Content-Type" content="text/html; charset=[[++modx_charset]]" />
+<base href="[[++site_url]]/" />
+<title>[[++site_name]]</title>
+
+<link href="assets/templates/anpasa/css/estilos.css" rel='stylesheet' type='text/css'>
+<link href="assets/templates/anpasa/css/fuentes.css" rel='stylesheet' type='text/css'>
+<link href="assets/templates/anpasa/css/cabecera.css" rel='stylesheet' type='text/css'>
+<link href="assets/templates/anpasa/css/menu.css" rel='stylesheet' type='text/css'>
+<link href="assets/templates/anpasa/css/contenidos.css" rel='stylesheet' type='text/css'>
+<link href="assets/templates/anpasa/css/footer.css" rel='stylesheet' type='text/css'>
+<link href="assets/templates/anpasa/css/contacto.css" rel='stylesheet' type='text/css'>
+<link href="assets/templates/anpasa/css/ajaxsearch.css" rel='stylesheet' type='text/css'>
+
+
+
+
+
+<!-- inicio script para contacto -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function ($) { 
+	$('#send').click(function(){ 
+		$('.error').fadeOut('slow'); 
+
+		var error = false; 
+
+		var name = $('input#name').val(); 
+		if(name == "" || name == " ") {
+			$('#err-name').fadeIn('slow'); 
+			error = true; 
+		}
+
+		var email_compare = /^([a-z0-9_.-]+)@([da-z.-]+).([a-z.]{2,6})$/; 
+		var email = $('input#email').val(); 
+		if (email == "" || email == " ") { 
+			$('#err-email').fadeIn('slow'); 
+			error = true;
+		}else if (!email_compare.test(email)) { 
+			$('#err-emailvld').fadeIn('slow'); 
+			error = true;
+		}
+
+		if(error == true) {
+			$('#err-form').slideDown('slow');
+			return false;
+		}
+
+		var data_string = $('#ajax-form').serialize(); 
+		alert(data_string);
+
+		$.ajax({
+			type: "POST",
+			url: $('#ajax-form').attr('action'),
+			data: data_string,
+			timeout: 6000,
+			error: function(request,error) {
+				if (error == "timeout") {
+					$('#err-timedout').slideDown('slow');
+				}
+				else {
+					$('#err-state').slideDown('slow');
+					$("#err-state").html('An error occurred: ' + error + '');
+				}
+			},
+			success: function() {
+				$('#ajax-form').slideUp('slow');
+				$('#ajaxsuccess').slideDown('slow');
+			}
+		});
+
+		return false; 
+	}); 
+});
+
+</script>
+
+
+
+		<link rel="stylesheet" href="css/colorbox.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/jquery.colorbox.js"></script>
+		<script>
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".group1").colorbox({rel:'group1'});
+				$(".group2").colorbox({rel:'group2', transition:"fade"});
+				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$(".ajax").colorbox();
+				$(".youtube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+				$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+				$(".iframe").colorbox({iframe:true, innerWidth:1000, innerHeight:450});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+
+				$('.non-retina').colorbox({rel:'group5', transition:'none'})
+				$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+
+
+</head>
+
+<body>
+<div id="contenedor">
+<header>
+[[$cabecera]]
+</header>
+
+<div id="submenu">
+<div class="block" >
+<div class="menu-centrado">
+<ul  class="multidireccionales"> <li  class="submenu active" class="submenu" ><a href="index.php?id=67" title="Características" multidireccionales><span>Características</span></a></li>
+<li  class="submenu" ><a href="index.php?id=74" title="Aplicaciones" multidireccionales><span>Aplicaciones</span></a></li>
+<li  class="submenu" ><a href="index.php?id=283" title="Componentes" multidireccionales><span>Componentes</span></a></li>
+<li  class="submenu" ><a href="index.php?id=311" title="descargas" ><span>descargas</span></a></li>
+<li  class="submenu" ><a href="index.php?id=65" title="servicios" multidireccionales><span>servicios</span></a></li>
+<li  class="submenu" class="submenu" ><a href="index.php?id=66" title="Galería" multidireccionales><span>Galería</span></a></li>
+ </ul>
+</div>
+</div>
+</div>
+
+[[*content]]
+
+		
+</div>
+<div class=footer-final>		
+<footer>
+[[$footer-gris]]
+</footer>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

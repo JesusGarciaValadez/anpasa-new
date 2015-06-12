@@ -1,0 +1,40 @@
+/*fuentes*/
+
+@font-face {
+    font-family: 'eurostile-bold';
+    src: url('../fuentes/eurostile.eot?');
+    src: url('../fuentes/eurostile.eot?#iefix') format('embedded-opentype'),
+         url('../fuentes/eurostile.woff') format('woff'),
+         url('../fuentes/eurostile.ttf') format('truetype'),
+         url('../fuentes/eurostile.svg#eurostile-bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'eurostile-bold-oblique';
+    src: url('../fuentes/eurostile_bold_oblique.eot?');
+    src: url('../fuentes/eurostile_bold_oblique.eot?#iefix') format('embedded-opentype'),
+         url('../fuentes/eurostile_bold_oblique.woff') format('woff'),
+         url('../fuentes/eurostile_bold_oblique.ttf') format('truetype'),
+         url('../fuentes/eurostile_bold_oblique.svg#eurostile-bold-oblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'trebuchet';
+    src: url('../fuentes/trebuchet.eot?');
+    src: url('../fuentes/trebuchet.eot?#iefix') format('embedded-opentype'),
+         url('../fuentes/trebuchet.woff') format('woff'),
+         url('../fuentes/trebuchet.ttf') format('truetype'),
+         url('../fuentes/trebuchet.svg#trebuchet') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.eurostile-bold{
+    font-family:'eurostile-bold';
+}
+.eurostile-bold-oblique{
+    font-family:'eurostile-bold-oblique';
+}
+$eurostile_bold: 'eurostile-bold';
+$eurostile-bold-oblique:'eurostile-bold-oblique';

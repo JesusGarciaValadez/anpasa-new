@@ -1,0 +1,25 @@
+      <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+      <script type="text/javascript">
+          jQuery.fn.exists = function(){return this.length>0;}
+
+          $( document ).ready( function ( ) {
+              if ( $( '#submenu ul' ).exists() ) {
+                  var totalWidth = 0;
+                  $( '#submenu ul li' ).map( function ( ) {
+                      totalWidth += $( this ).width() + 1;
+                  } );
+                  $( '#submenu ul' ).addClass( 'clearfix' ).width( totalWidth );
+              }
+
+              if ( $( '.galerias' ).exists() ) {
+                  var totalWidth = 0;
+                  var control    = 0;
+                  $( '.galerias .galeria' ).map( function ( ) {
+                      totalWidth += $( this ).width() + 1;
+                      control++;
+                  } );
+                  totalWidth  += ( 30 * ( control - 1 ) );
+                  $( '.galerias' ).addClass( 'clearfix' ).width( totalWidth );
+              }
+          } );
+      </script>

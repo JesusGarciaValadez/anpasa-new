@@ -1,0 +1,242 @@
+#menu ul {
+list-style-type: none;
+height: 20px;
+width: 600px;
+margin: auto;
+}
+
+#menu ul li{
+float: left;
+
+}
+
+#menu ul a{
+	font-family: "eurostile-bold-oblique", sans-serif; 
+	color:#474747;
+	text-transform: uppercase;
+	font-size:13px;
+	padding-right: 20px;
+}
+
+
+#menu ul a:hover{ 
+color:#e77b18;
+}
+
+
+#menu .active span{
+	color:#e77b18;
+}
+
+#submenu{
+	background:#eb7932;
+	width: 100%;
+	height: 50px;
+
+}
+
+#submenu .andamios-colgantes{
+	width:700px;
+}
+
+
+#submenu .andamios-tubulares{
+	width:700px;
+}
+
+#submenu .pie-derecho{
+	width:700px;
+}
+#submenu .multidireccionales{
+	width:650px;
+}
+#submenu .allround{
+	width:700px;
+}
+#submenu .faraday{
+	width:700px;
+}
+
+#submenu .prevectron .puntas-ionizantes{
+	width:1090px;
+}
+
+#submenu .puntas-ionizantes{
+	width:1090px;
+}
+
+#submenu .sistemas-de-proteccion{
+	width:750px;
+}
+
+#submenu .anpasa{
+	width:470px;
+}
+
+
+
+
+
+
+#submenu ul{
+	margin: auto;
+
+}
+
+#submenu li.submenu {
+list-style-type: none;
+float: left;
+}
+
+#submenu li.submenu a{
+height: 50px;
+-webkit-transform: skew(-20deg);
+   -moz-transform: skew(-20deg);
+     -o-transform: skew(-20deg);
+	float:left;
+	padding: 0px 10px 0px 10px;
+	color:#FFFFFF;	
+	font-family: "eurostile-bold-oblique", sans-serif; 
+	text-transform: uppercase;
+}
+
+
+#submenu li.submenu a span{
+-webkit-transform: skew(20deg);
+   -moz-transform: skew(20deg);
+     -o-transform: skew(20deg);
+font-family: 'eurostile-bold-oblique';
+font-size: 13px;
+text-transform:uppercase;
+float:left;
+color:#FFFFFF;	
+padding-top:18px;
+}	
+
+#submenu li.submenu a:hover{
+-webkit-transform: skew(-20deg);
+   -moz-transform: skew(-20deg);
+     -o-transform: skew(-20deg);
+float:left;
+background: #d9eaef;
+}
+
+
+#submenu li.submenu a:hover span{
+-webkit-transform: skew(20deg);
+   -moz-transform: skew(20deg);
+     -o-transform: skew(20deg);
+float:left;
+font-family: 'eurostile-bold-oblique';
+text-transform:uppercase;
+color:#474747;	
+padding-top:18px;
+}	
+
+
+/* activo  */
+
+#submenu li.active {
+list-style-type: none;
+float: left;
+}
+
+#submenu li.active a{
+height: 50px;
+-webkit-transform: skew(-20deg);
+   -moz-transform: skew(-20deg);
+     -o-transform: skew(-20deg);
+	float:left;
+	padding: 0px 10px 0px 10px;
+	color:#FFFFFF;	
+	font-family: "eurostile-bold-oblique", sans-serif; 
+	text-transform: uppercase;
+}
+
+
+#submenu li.active a span{
+-webkit-transform: skew(20deg);
+   -moz-transform: skew(20deg);
+     -o-transform: skew(20deg);
+font-family: 'eurostile-bold-oblique';
+font-size: 13px;
+text-transform:uppercase;
+float:left;
+color:#FFFFFF;	
+padding-top:18px;
+}	
+
+#submenu li.active a{
+-webkit-transform: skew(-20deg);
+   -moz-transform: skew(-20deg);
+     -o-transform: skew(-20deg);
+float:left;
+background: #d9eaef;
+}
+
+
+#submenu li.active a span{
+-webkit-transform: skew(20deg);
+   -moz-transform: skew(20deg);
+     -o-transform: skew(20deg);
+float:left;
+font-family: 'eurostile-bold-oblique';
+text-transform:uppercase;
+color:#474747;	
+padding-top:18px;
+}	
+/* activo */
+
+
+
+#subsubmenu{
+	margin-bottom: 20px;
+}
+
+#subsubmenu ul {
+list-style: none;
+list-style-image: url('icono_submenu.jpg');
+}
+
+
+#subsubmenu ul a{
+padding-right: 20px;
+font-family: 'eurostile-bold', sans-serif;
+font-weight: bolder;
+color: #86959a;
+font-size: 18px;
+}
+
+
+#subsubmenu ul a:hover{ 
+color:#e77b18;
+}
+/*
+#subsubmenu li a.active span{
+color:#e77b18;
+}
+*/
+#subsubmenu .active span{
+color:#e77b18;
+}
+
+
+#descargas a{
+font-family: "eurostile-bold";
+color: #474747;
+font-size: 16px;
+}
+
+
+#descargas a:hover{
+	color:#e77b18;
+}
+
+#descargas li{
+list-style-position: outside;
+text-align: left;
+list-style-type: none;
+list-style-image: url('descargas.png');	
+color:#474747;
+
+}

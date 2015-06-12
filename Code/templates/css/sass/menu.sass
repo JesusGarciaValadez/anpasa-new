@@ -1,0 +1,136 @@
+.menu-centrado
+    display: block
+    height: 50px
+    margin: 0 auto
+    vertical-align: middle
+#submenu
+    background: #eb7932
+    width: 100%
+    height: 50px
+    ul
+        display: block
+        margin: auto
+        width: 900px
+        li
+            border: 0 none transparent
+            float: left
+            height: 50px
+            list-style-type: none
+            transform: skew(-20deg)
+            a
+                border: 0 none transparent
+                color: #FFF
+                font-family: "eurostile-bold-oblique", sans-serif
+                float: left
+                height: 100%
+                padding: 0px 10px
+                text-transform: uppercase
+                span
+                    border: 0 none transparent
+                    float: left
+                    font-family: 'eurostile-bold-oblique'
+                    font-size: 13px
+                    line-height: 50px
+                    text-transform: uppercase
+                    transform: skew(20deg)
+            &.submenu
+                a
+                    span
+                        color: #FFF
+                    &:hover
+                        background: #d9eaef
+            &.active
+                a
+                    background: #d9eaef
+                    span
+                        color: #474747
+/* activo */
+#subsubmenu
+    margin-bottom: 20px
+    ul
+        list-style: none
+        list-style-image: url('icono_submenu.jpg')
+        p
+            margin: 0
+        a
+            color: #86959a
+            font-family: 'eurostile-bold', sans-serif
+            font-size: 18px
+            font-weight: bolder
+            padding-right: 20px
+            &:hover
+                color: #e77b18
+    .active
+        span
+            color: #e77b18
+#descargas
+    a
+        font-family: "eurostile-bold"
+        color: #474747
+        font-size: 16px
+        &:hover
+            color: #e77b18
+    li
+        list-style-position: outside
+        text-align: left
+        list-style-type: none
+        list-style-image: url('descargas.png')
+        color: #474747
+ul#menu
+    padding: 0
+    margin: 0
+    ul.sub-menu
+        background-color: rgba(71,71,71,0.1)
+        background-color: #c9d9dd
+        display: none
+        left: 0
+        margin: 0
+        padding: 0
+        position: absolute
+        top: 30px
+        width: 210px
+        z-index: 0
+        li.sub-menu
+            a
+                text-decoration: none
+                color: #ff6633
+                display: inline-block
+                font-family: "eurostile-bold-oblique", sans-serif
+                color: #474747
+                text-transform: uppercase
+                font-size: 13px
+                padding: 5px 10px 0px 0px
+    li, li a
+        color: #474747
+        text-decoration: none
+        display: inline-block
+        font-family: "eurostile-bold-oblique", sans-serif
+        text-transform: uppercase
+        font-size: 13px
+        padding: 4px 6px 0px 0px
+    li
+        float: left
+        position: relative
+        z-index: 1
+        &:hover
+            ul.sub-menu
+                display: block
+    a
+        &:hover
+            color: #e77b18
+ul#menu li, ul.sub-menu li
+    list-style-type: none
+#menu
+    .active
+        color: #e77b18
+        span
+            color: #e77b18
+    ul
+        a
+            font-family: "eurostile-bold-oblique", sans-serif
+            color: #474747
+            text-transform: uppercase
+            font-size: 13px
+            padding-right: 20px
+            &:hover
+                color: #e77b18

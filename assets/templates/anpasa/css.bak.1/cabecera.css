@@ -1,0 +1,206 @@
+#cabecera{
+	height: 170px;
+	height: 140px;
+	width: 1024px;
+	margin: 0px auto 0px auto;
+}
+
+
+
+#cabecera .botonera{
+	height: 120px;
+	width: 1024px;
+	float:left;
+}
+
+
+#cabecera .centro {
+	float:left;
+	width:560px;
+	padding: 50px 25px 0px 40px;
+}
+
+
+#cabecera .logo{
+	margin-left: 22px;
+}
+
+
+#cabecera .izquierda { 
+float:left; 
+margin: 0px 0px 0px 0px; 
+}
+
+
+#cabecera .derecha { 
+float:left;
+ margin: 0px 0px 0px 0px; 
+}
+
+#cabecera .buscador{
+	padding: 40px 0px 0px 0px;
+}
+#cabecera .contacto-gris{
+	font-family:Trebuchet, Tahoma;
+	color:#606e6e;
+	font-size: 10px;
+	padding: 0px 0px 0px 00px;
+	text-align: right;
+}
+
+#cabecera .contacto-naranja{
+	font-family: Trebuchet, Tahoma;
+color: #ed6300;
+font-size: 11px;
+padding: 0px 0px 0px 00px;
+text-align: right;
+}
+
+#cabecera a.contacto-naranja{
+	font-family:Trebuchet, Tahoma;
+	color:#ed6300;
+	font-size: 11px;
+	padding: 0px 0px 0px 00px;
+	text-align: right;
+}
+
+
+
+
+/*
+#buscador input[type=search] { 
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+
+	color: #c7c7c7;  
+	text-align: left;
+	cursor: pointer;
+/*	display: block;  */
+	width: 100%; 
+	letter-spacing: 0px;        
+	text-shadow: 0 0 1px #c7c7c7;        
+	word-spacing: 10px;   
+        border: none;  
+        background-color:#fff;   
+height:20px;       
+
+font-size: 11px;
+
+}
+
+#buscador input[type=search] {
+	border: 1px solid #ccc;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 5px;
+	font-size: 12px;
+	padding: 4px 7px;
+	outline: 0;
+	-webkit-appearance: none;
+}
+input.rounded:focus {
+	border-color: #339933;
+background-image: url('http://www.kirupa.com/images/search.png');
+background-position: 270px -10px;
+background-repeat: no-repeat;
+}
+
+*/
+
+
+#buscador input[type=text] {  
+	text-align: right;
+	width: 80px; 
+	outline:none;	   
+	padding: 0;
+	border: none;
+	background: none;
+	background-color:transparent;
+	border: 0px solid;
+}
+
+
+#buscador  input[type=submit]{
+	background: url("lupita.png");
+	padding: 0;
+	border: none;
+	background: none;
+} 
+
+
+input[type=text] {  
+	font-family:Trebuchet, Tahoma;
+	text-align: left;
+	margin-left: 2px;
+	width: 105px; 
+	outline:none;	   
+	padding: 0;
+	border: none;
+	background: none;
+	background-color:transparent;
+	border: 0px solid;
+	font-size:12px
+}
+
+
+input[type=submit]{
+	background: url("imagenes/lupita.png");
+	padding: 0;
+	border: none;
+	background: none;
+}
+
+.busca{
+width: 160px;
+background-color: #fff;
+
+        border: 0px solid #ccc;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 5px;
+
+
+
+}
+
+
+
+
+
+
+
+
+#breadCrumbsContainer a{
+color:#EB7932;
+}
+
+#breadCrumbsContainer a:hover{
+color:#EB7932;
+}
+
+
+
+
+
+/*********************************/
+
+.espacio{
+width: 1024px;
+margin: 0px auto 0px auto;
+}
+
+
+.bc_li{
+float:left;
+list-style-type: none;
+//list-style-image: url('descargas.png');
+
+font-family: Trebuchet, Tahoma;
+color: #606e6e;
+font-size: 13px;
+padding: 0px 4px 0px 0px;
+text-align: right;
+}
+/*********************************/

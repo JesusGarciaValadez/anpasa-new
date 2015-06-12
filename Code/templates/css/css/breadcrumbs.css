@@ -1,0 +1,33 @@
+/*
+Error: Invalid CSS after "    float: left": expected "{", was ""
+        on line 32 of /Applications/MAMP/htdocs/anpasa-new/Code/templates/css/sass/breadcrumbs.scss
+
+27:     cursor: pointer
+28: .B_crumbBox
+29:     list-style-type: none
+30:     float: left
+
+Backtrace:
+/Applications/MAMP/htdocs/anpasa-new/Code/templates/css/sass/breadcrumbs.scss:32
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1165:in `expected'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1101:in `expected'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1096:in `tok!'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:641:in `block'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:635:in `ruleset'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:660:in `block_child'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:650:in `block_contents'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:117:in `stylesheet'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:42:in `parse'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/engine.rb:393:in `_to_tree'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:407:in `run'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:52:in `parse'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/bin/scss:13:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"    float: left\": expected \"{\", was \"\"\A         on line 32 of /Applications/MAMP/htdocs/anpasa-new/Code/templates/css/sass/breadcrumbs.scss\A \A 27:     cursor: pointer\A 28: .B_crumbBox\A 29:     list-style-type: none\A 30:     float: left"; }

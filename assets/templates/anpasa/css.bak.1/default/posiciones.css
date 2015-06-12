@@ -1,0 +1,394 @@
+/**
+ * @file
+ * @last_update: 2012/03/13 16:20GMT-6
+ * @Autor: Paynalton
+ */
+
+/** Comienza General **/
+body {
+	text-align: left;
+}
+
+
+.wrapper {
+		width:800px;
+		margin:0 auto;
+}
+
+/** Termina General*/
+
+/** comienza cintillo */
+
+
+.cintillo {
+	width: 100%; 
+	height: 30px;
+	  padding: 10px 0px 0px 0px;
+	   margin: 0px 0px auto; 
+	   text-align: right; 
+}
+.cintillo .modulo {
+	float:right;
+	margin:0 0 0 5px;
+}
+
+
+.cintillo .twitterfeed {
+	margin:5px 0 0;
+}
+
+
+.twitterfeed {
+	width:680px;
+	overflow:hidden;
+	}
+	
+.twitterfeed #twitterwrap .entry{
+	height:30px;
+	float:left;
+}
+
+.twitterlink .icon{
+	width:30px;
+	vertical-align:middle;
+	height:22px;
+}
+
+/** Termina Cintillo */
+
+
+
+
+
+
+/**Comienza header */
+.cabecera {
+	width:100%;
+	height:60px;
+	overflow:hidden;
+}
+.cabecera .modulo{
+	height:50px;
+	}
+.logo {
+	float:left;
+	width:200px;
+	margin:0 5px ;
+	position:absolute;
+}
+.barrasocial {
+	float:right;
+	width:400px;
+}
+.barrasocial .leyenda {
+	width:110px;
+	float:left;
+	margin:30px 0;
+}
+.barrasocial .sitios {
+	width:280px;
+	float:left;
+	margin:10px 0;
+}
+.barrasocial .sitios .sitio{
+	width:60px;
+	float:left;
+	text-align:center;
+	margin:0 5px;
+}
+.barrasocial .sitios .sitio .icon{
+	border:0px none;
+	width:60px;
+}
+/** Termina header */
+
+
+
+
+
+/** Comienza banner */
+
+#_bannerRotator_wrapper {
+}
+.banner
+	{
+	width:100%;
+	height:300px;
+	margin:10px 0;
+	}
+.banner .descripcion {
+	margin:-280px 0 0;
+	text-align:right;
+}
+.bannerRotator {
+	position:absolute;
+	height:310px;
+	width:800px;
+	}
+.bannerRotator .right,
+.bannerRotator .left{
+	position:absolute;
+	top:110px;
+	width:33px;
+	height:75px;
+	}
+.bannerRotator .right img,
+.bannerRotator .left img{
+	}
+.bannerRotator .left{
+	left:-10px;
+	}
+.bannerRotator .right{
+	left:780px;
+}
+.banner .indice {
+	height:14px;
+	position:absolute;
+	width:330px;
+	top:280px;
+	right:0px;
+}
+.banner .indice .aguja{
+	width:14px;
+	height:14px;
+	float:left;
+}
+/**Termina Banner */
+
+/** Comienza cuerpo */
+.cuerpo {
+	width:100%;
+	margin: 30px 0;
+	height:260px;
+}
+.video {
+	width:360px;
+	height:280px;
+	float:left;
+}
+.formulario {
+	width:425px;
+	height:280px;
+	float:right;
+	overflow:hidden;
+}
+.formulario .campos {
+	width:160px;
+	margin: 10px;
+	float:left;
+}
+.formulario .campos .leyenda{
+	text-align:right
+}
+.formulario .campos .campo{
+	margin:10px 0;
+}
+.formulario .campos .campo label{
+	display: block;
+    height: 20px;
+    margin: 0 0 -27px;
+    width: 155px;
+	padding:7px 0 0 5px;
+	text-align:left;
+	}
+	
+.formulario .campos  .campo .inputtext{
+	display:block;
+	width:155px;
+	height:22px;
+}
+.formulario .campos  .campo .select{
+	display:block;
+	width:160px;
+	height:27px;
+}
+.formulario .campos .selects{
+	text-align:left;	
+}
+.formulario .campos .selects input{
+	vertical-align:middle;
+}
+.formulario .campos  .selects .inputtext{
+	display:block;
+	width:100px;
+	height:12px;
+	float:right;
+	margin:5px 0;
+}
+.formulario .captcha {
+	width:230px;
+	height:113px;
+	overflow:hidden;
+	float:right;
+	margin: 30px 5px 0;
+	text-align:center;
+}
+
+div.captcha #recaptcha_image {
+	width:200px;
+}
+  .captcha .controles {
+  	float:right;
+	width:20px;
+	height:52px;
+  }
+    .captcha .controles img{
+    	margin:2px 0;
+    	}
+ .captcha #recaptcha_image  {
+	margin: 0 0 5px;
+ }
+ 
+ .captcha #recaptcha_image img {
+ 	width:210px;
+	height:53px;
+	margin: 0 0 5px;
+ }
+
+.formulario .extras {
+	width:235px;
+	overflow:hidden;
+	float:right;
+	margin: 0 5px 0 0;
+}
+.formulario .extras #_campana{
+	vertical-align:middle;
+	display:block;
+	margin:7px;
+	float:left;
+}
+
+.formulario .extras .news .link{
+	display:block;
+	text-align:right;
+}
+.formulario .extras .botones {
+	text-align:right;
+	margin:20px 0 0;
+}
+
+.formulario .extras .links {
+	text-align:right;
+	margin:10px 0;	
+}
+/** termina cuerpo */
+/** comienza footer */
+.footer {
+	width:100%;
+}
+.footer .cinta {
+	width: 100%;
+}
+.footer .guias {
+	padding:11px 0;
+	text-align:center;
+}
+.footer .telefonos {
+	width:680px;
+	margin:30px auto;
+	height:25px;
+}
+.telefonos ul {
+	margin:0px;
+	padding:0px;
+}
+.telefonos ul li{
+	float:left;
+	margin:0 6px;
+	list-style:none;
+}
+.copyright {
+	margin: 50px auto;
+}
+.copyright .leyenda{
+	float:left;
+}
+.copyright .aviso{
+	float:right;
+}
+/** termina footer */
+
+.box1{ 
+  width:680px;
+  height:635px;
+  padding:10px 20px;
+  background:#F0F3E8;
+  font-size:18px;
+  border-bottom-right-radius:30px;
+}
+.box1 p{
+  width:550px;
+  margin:5px auto;
+}
+.box1 .contenido ul li{
+	font-weight:normal;
+	}
+.box1 .logo{
+  position:relative;
+  float:none;
+}
+
+.box1 .contenido img{
+ /* width:150px;
+  float:left;
+  margin:20px 30px 20px 20px;*/
+}
+
+.box1 .contenido ul li{
+	font-size:20px;
+	}
+
+.contenido ul li{
+	list-style:url(../../img/bull.png);
+	/*display:block;*/
+	margin:10px 0;
+}
+
+.box2{
+	width:680px; 
+	height:640px;
+/*  padding:10px;*/ 
+ background:#EAF1FA;
+  font-size:18px;
+  border-bottom-right-radius:36px;
+  padding-top:50px;
+}
+
+.box2 .logo,.box1 .logo {
+  position:relative;
+  float:none;
+  display:block;
+  width:550px;
+  margin:auto;
+  padding-top:15px;
+}
+.box2 p{
+  width:550px;
+  margin:5px auto;
+}
+.box2 ul{
+  padding:0 100px;
+}
+.box2 .contenido img{
+  width:500px;
+  display:block;
+  margin:20px auto;
+}
+.link{
+  text-align:right;
+}
+.link a{
+  color:#990033;
+}
+
+.formulario h2{
+  font-size:12px;
+  background: #82786d;
+  margin:0;
+  padding:10px 5px;
+  color:#ffffff;
+  text-align:center;
+}
+.campana b{
+  color:#990033;
+}

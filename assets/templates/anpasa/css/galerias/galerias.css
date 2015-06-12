@@ -1,0 +1,34 @@
+/* New in version 1.7+ */
+ #slider1 {
+  width: 800px;
+  height: 600px;
+  list-style: none;
+ }
+ /* CSS to expand the image to fit inside colorbox */
+ #cboxPhoto { width: 100%; height: 100%; margin: 0 !important; }
+ /* Change metallic theme defaults to show thumbnails */
+ div.anythingControls {
+  bottom: 25px; /* thumbnail images are larger than the original bullets; move it up */
+ }
+ .anythingSlider-metallic .thumbNav a {
+  background-image: url();
+  height: 30px;
+  width: 30px;
+  border: #000 1px solid;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  text-indent: 0;
+ }
+ .anythingSlider-metallic .thumbNav a span {
+  visibility: visible; /* span changed to visibility hidden in v1.7.20 */
+ }
+ /* border around link (image) to show current panel */
+ .anythingSlider-metallic .thumbNav a:hover,
+ .anythingSlider-metallic .thumbNav a.cur {
+  border-color: #fff;
+ }
+ /* reposition the start/stop button */
+ .anythingSlider-metallic .start-stop {
+  margin-top: 15px;
+ }

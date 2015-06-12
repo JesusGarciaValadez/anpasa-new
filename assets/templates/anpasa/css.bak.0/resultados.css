@@ -1,0 +1,89 @@
+#resultados{
+margin: 0px auto;
+width: 950px;
+margin-top: 30px;
+margin-bottom:160px;
+}
+
+
+
+#resultados .sisea-page{
+font-family: 'eurostile-bold';
+font-size: 14px;
+background-color:#;
+
+}
+
+#resultados .sisea-page a:visited a:link{
+font-family: 'eurostile-bold';
+font-size: 14px;
+color: #4444;
+}
+
+#resultados .sisea-page a{
+font-family: 'eurostile-bold';
+font-size: 14px;
+color: #444;
+}
+
+#resultados a.sisea-page {
+font-family: 'eurostile-bold';
+font-size: 14px;
+color: #444;
+}
+
+#resultados h3{
+font-size 40px;
+}
+
+#resultados .sisea-result-pages {
+font-family: 'eurostile-bold';
+font-size: 14px;
+}
+
+#resultados .sisea-result {
+background-color: ;
+}
+
+#resultados .extract{
+font-family: 'eurostile-bold';
+font-size: 14px;
+color: #4444;
+}
+
+
+#resultados .sisea-results{
+font-family: 'eurostile-bold';
+font-size: 14px;
+color: #4444;
+}
+
+
+#resultados h3 a {
+color: #eb7932;
+font-family: eurostile-bold;
+font-size: 15px;
+}
+
+#resultados h3{
+font-family: 'eurostile-bold';
+font-size: 13px;
+color: #444;
+pa}
+
+#resultados .sisea-paging {
+color: #eb7932;
+margin-right: 50px;
+float: right;
+}
+
+
+
+
+#resultados .titulo-descargas {
+font-family: "eurostile-bold";
+color: #474747;
+font-size: 30px;
+height: 10px;
+margin-bottom: 30px;
+margin-left: 0px;

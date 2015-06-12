@@ -1,0 +1,38 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	
+	font-size:11px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.twitterfeed,
+.twitterlink .link{
+	font-size:13px;
+}
+
+.formulario .extras .invex {
+	font-weight:bold;
+}
+
+.copyright,
+.formulario .campos  .selects .inputtext,
+.formulario .campos .leyenda{
+	font-size:10px;
+}
+.telefonos,
+.formulario .extras .news .link,
+.formulario .extras label{
+	font-size:9px;
+}
+.formulario .campos label{
+	font-size:12px;
+}
+.banner .descripcion ,
+.barrasocial .leyenda ,
+.footer .guias ,
+.formulario .extras .links  .link {
+	font-size:11px;
+	}

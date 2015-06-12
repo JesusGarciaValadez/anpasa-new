@@ -1,0 +1,35 @@
+<!-- $stylesheet = contenidos-main.css -->
+<!-- @import head -->
+    <body>
+        <div>
+            <header>
+                [[$cabecera_home]]
+            </header>
+        </div>
+        <div id="submenu">
+            <div class="block" >
+                <div class="menu-centrado">
+                [[!Wayfinder?
+                    &startId=`[[*mparent]]`
+                    &level=`1`
+                    &outerTpl=`outerTpl`
+                    &rowTpl=`submenu`
+                    &lastClass=`submenu`
+                    &firstClass=`submenu`
+                    &hereClass=`active`
+                    &ignoreHidden=`1`
+                ]]
+                </div>
+            </div>
+        </div>
+        <div>
+            [[*content]]
+        </div>
+        <div class="clearfix">
+            <footer>
+                [[$footer-gris]]
+            </footer>
+        </div>
+        <!-- @import scripts -->
+    </body>
+</html>

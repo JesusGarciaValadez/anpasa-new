@@ -1,0 +1,188 @@
+<!DOCTYPE html >
+<!--[if lt IE 7]>      <html lang="es" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="es" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="es" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="es" class="no-js"> <!--<![endif]-->
+    <head>
+        <title>[[++site_name]]</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=[[++modx_charset]]" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="robots" content="all" />
+        <base href="[[++site_url]]" />
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="favicon.png" type="image/png" />
+
+        <link href="assets/templates/anpasa/css/contacto-main.css" rel='stylesheet' type='text/css'>
+
+        <script src="Code/templates/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>    <body>
+        <div>
+            <header>
+                [[$cabecera_home]]
+            </header>
+        </div>
+        <div id="submenu">
+            <div class="block" >
+                <div class="menu-centrado"></div>
+            </div>
+        </div>
+        <div>
+            [[*content]]
+        </div>
+        <div>
+            <footer>
+                [[$footer-gris]]
+            </footer>
+        </div>
+              <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+      <script type="text/javascript">
+          jQuery.fn.exists = function(){return this.length>0;}
+
+          $( document ).ready( function ( ) {
+              if ( $( '#submenu ul' ).exists() ) {
+                  var totalWidth = 0;
+                  $( '#submenu ul li' ).map( function ( ) {
+                      totalWidth += $( this ).width() + 1;
+                  } );
+                  $( '#submenu ul' ).addClass( 'clearfix' ).width( totalWidth );
+              }
+
+              if ( $( '.galerias' ).exists() ) {
+                  var totalWidth = 0;
+                  var control    = 0;
+                  $( '.galerias .galeria' ).map( function ( ) {
+                      totalWidth += $( this ).width() + 1;
+                      control++;
+                  } );
+                  totalWidth  += ( 30 * ( control - 1 ) );
+                  $( '.galerias' ).addClass( 'clearfix' ).width( totalWidth );
+              }
+          } );
+      </script>        <script src="js/jquery.colorbox.js"></script>
+        <script type="text/javascript">
+            $( 'document' ).ready( function () {
+                //  Validación del formulario de contacto
+                $( '#send' ).click( function( e ) {
+                    e.preventDefault();
+
+                    var error, name, email_compare, email, data_string;
+                    $( '.error' ).fadeOut( 'slow' );
+                    error = false;
+
+                    name = $( 'input#name' ).val();
+                    if( name == "" || name == " " ) {
+                        $( '#err-name' ).fadeIn( 'slow' );
+                        error = true;
+                    }
+
+                    email_compare   = /^([a-z0-9_.-]+)@([da-z.-]+).([a-z.]{2,6})$/;
+                    email           = $('input#email').val();
+                    if ( email == "" || email == " " ) {
+                        $( '#err-email' ).fadeIn( 'slow' );
+                        error = true;
+                    } else if ( !email_compare.test( email ) ) {
+                        $( '#err-emailvld' ).fadeIn( 'slow' );
+                        error = true;
+                    }
+
+                    if( error == true ) {
+                        $( '#err-form' ).slideDown( 'slow' );
+                        return false;
+                    }
+
+                    data_string     = $( '#ajax-form' ).serialize();
+                    alert( data_string );
+
+                    $.ajax( {
+                        type:       "POST",
+                        url:        $( '#ajax-form' ).attr( 'action' ),
+                        data:       data_string,
+                        timeout:    6000,
+                        error:      function( request, error ) {
+                            if ( error == "timeout" ) {
+                                $( '#err-timedout' ).slideDown( 'slow' );
+                            } else {
+                                $( '#err-state' ).slideDown( 'slow' );
+                                $( '#err-state' ).html( 'An error occurred: ' + error );
+                            }
+                        },
+                        success:    function() {
+                            $( '#ajax-form' ).slideUp( 'slow' );
+                            $( '#ajaxsuccess' ).slideDown( 'slow' );
+                        }
+                    } );
+
+                    return false;
+                } );
+
+                //Examples of how to assign the Colorbox event to elements
+                $( ".group1" ).colorbox( { rel: 'group1' } );
+                $( ".group2" ).colorbox( { rel: 'group2', transition: "fade" } );
+                $( ".group3" ).colorbox( {
+                    rel: 'group3',
+                    transition: "none",
+                    width: "75%",
+                    height: "75%"
+                } );
+                $( ".group4" ).colorbox( { rel: 'group4', slideshow: true } );
+                $( ".ajax" ).colorbox();
+                $( ".youtube" ).colorbox( {
+                    iframe: true,
+                    innerWidth:425,
+                    innerHeight:344
+                } );
+                $( ".vimeo" ).colorbox( {
+                    iframe: true,
+                    innerWidth: 500,
+                    innerHeight:409
+                } );
+                $( ".iframe" ).colorbox( {
+                    iframe:true,
+                    innerWidth:1000,
+                    innerHeight:450
+                } );
+                $( ".inline" ).colorbox( { inline:true, width:"50%"});
+                $( ".callbacks" ).colorbox( {
+                    onOpen:    function(){
+                        alert('onOpen: colorbox is about to open');
+                    },
+                    onLoad:    function(){
+                        alert('onLoad: colorbox has started to load the targeted content');
+                    },
+                    onComplete:function(){
+                        alert('onComplete: colorbox has displayed the loaded content');
+                    },
+                    onCleanup: function(){
+                        alert('onCleanup: colorbox has begun the close process');
+                    },
+                    onClosed:  function(){
+                        alert('onClosed: colorbox has completely closed');
+                    }
+                });
+
+                $( '.non-retina' ).colorbox( {rel:'group5', transition:'none'})
+                $( '.retina' ).colorbox( {
+                    rel:            'group5',
+                    transition:     'none',
+                    retinaImage:    true,
+                    retinaUrl:      true
+                } );
+                //Example of preserving a JavaScript event for inline calls.
+                $( "#click" ).click( function() {
+                    var _text = "Open this window again and this message will still be here.";
+                    $( '#click' ).css( {
+                        "background-color":    "#f00",
+                        "color":               "#fff",
+                        "cursor":              "inherit"
+                    } ).text( _text );
+                    return false;
+                });
+            });
+        </script>
+    </body>
+</html>

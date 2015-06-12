@@ -1,0 +1,40 @@
+<!-- $stylesheet = template-20.css -->
+<!-- @import head -->
+
+    <body>
+        [[!If? &subject=`[[*prettyGalleryAlbum]]` &operator=`!empty` &then=`[[$prettyGalleryCss]]`]]
+        <div>
+            <header>
+                [[$cabecera_proyectos]]
+            </header>
+        </div>
+        <div id="submenu">
+            <div class="block" >
+                <div class="menu-centrado">
+                     [[!Wayfinder?
+                         &startId=`[[*mparent]]`
+                         &level=`1`
+                         &outerTpl=`outerTpl`
+                         &rowTpl=`submenu`
+                         &lastClass=`submenu`
+                         &firstClass=`submenu`
+                         &hereClass=`active`
+                         &ignoreHidden=`1`
+                     ]]
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="galeria" style="min-height:700px;">
+                [[!If? &subject=`[[*prettyGalleryAlbum]]` &operator=`!empty` &then=`[[$prettyGallery]]`]]
+                [[!If? &subject=`[[*prettyGalleryAlbum]]` &operator=`!empty` &then=`[[$prettyGalleryScripts]]`]]
+            </div>
+        </div>
+        <div>
+            <footer>
+                [[$footer-gris]]
+            </footer>
+        </div>
+        <!-- @import scripts -->
+    </body>
+</html>

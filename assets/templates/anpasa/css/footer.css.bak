@@ -1,0 +1,202 @@
+/*
+.footer-final {
+	display:block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 130px;
+	width: 100%;
+}
+*/
+
+
+#footer-interiores {
+position: relative;
+width: 100%;
+margin: 0px 0px 0px 0px;
+background: #444; 
+height: 150px;
+bottom:0;
+}
+
+#footer-interiores .redes{
+height:0px;
+margin-top: 5px;
+}
+
+
+
+#footer-interiores .desde{
+	text-align: center;
+	padding-top: 30px;
+	font-family: 'eurostile-bold';
+	color: #fff;
+font-size: 25px;
+padding-bottom: 10px;
+}
+
+
+#footer-interiores .compartir{
+font-family: 'eurostile-bold';
+color: #fff;
+font-size: 12px;
+padding: 5px 0px 0px 10px;
+margin-right: 5px;
+font-style: italic;
+float: left;
+}
+
+
+#footer-interiores .derechos-reservados{
+	font-family: "eurostile-bold";
+	color:#fff;
+	font-size: 12px;
+	padding: 10px 0px 0px 0px;
+	text-align: center;
+	font-style: italic;
+}
+
+
+
+#ciudades ul {
+margin: auto;
+list-style: none;
+}
+
+#ciudades li{
+padding-right: 30px;
+float: left;
+list-style-image: url('punto-ciudades.png');
+font-family: Trebuchet;
+color: #fff;
+font-size: 14px;
+vertical-align: bottom;
+}
+
+#ciudades li.primera{
+list-style-image: url('assets/templates/anpasa/css/punto-ciudades-transparente.gif');
+padding-top: 4px;
+}
+
+
+/***********************/
+
+
+
+
+#footer-claro {
+position: relative;
+width: 100%;
+margin: 0px 0px 0px 0px;
+height: 145px;
+bottom:0;
+}
+
+#footer-claro .redes{
+height:0px;
+margin-top: 5px;
+}
+
+
+
+#footer-claro .desde{
+	text-align: center;
+	padding-top: 30px;
+	font-family: 'eurostile-bold';
+	color: #86959a;
+font-size: 25px;
+padding-bottom: 10px;
+}
+
+
+#footer-claro .compartir{
+font-family: 'eurostile-bold';
+color: #86959a;
+font-size: 12px;
+padding: 5px 0px 0px 10px;
+margin-right: 5px;
+font-style: italic;
+float: left;
+}
+
+
+#footer-claro .derechos-reservados{
+	font-family: "eurostile-bold";
+	color:#86959a;
+	font-size: 12px;
+	padding: 10px 0px 0px 0px;
+	text-align: center;
+	font-style: italic;
+}
+
+
+
+
+
+#ciudades-claro ul {
+margin: auto;
+list-style: none;
+}
+
+#ciudades-claro li{
+padding-right: 20px;
+float: left;
+list-style-image: url('punto-ciudades.png');
+font-family: Trebuchet;
+color: #86959a;
+font-size: 14px;
+vertical-align: bottom;
+}
+
+#ciudades-claro li.primera{
+list-style-image: url('assets/templates/anpasa/css/punto-ciudades-transparente.gif');
+padding-top: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.bloque-ciudades {
+padding-top: 50px;
+margin: 0 auto;
+}
+
+
+
+
+.block-ciudades {
+  text-align: center;
+  margin: 0px;
+}
+ 
+.block-ciudades:before {
+  content: '';
+  display: inline-block;
+  height: 100%; 
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+    
+
+ }
+ 
+.bloque-ciudades {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px 15px;
+
+ }
+
+
+
+
+
+
+
+

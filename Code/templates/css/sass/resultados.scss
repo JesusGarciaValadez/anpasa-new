@@ -1,0 +1,59 @@
+#resultados{
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-bottom:160px;
+    width: 950px;
+    .sisea-page{
+        font: normal 14px/1em $eurostile_bold; 
+        a{
+            font-family: $eurostile_bold;
+            font-size: 14px;
+            color: #444;
+            &:visited {
+            
+                a{
+                
+                    &:link{
+                        color: #4444;
+                        font-family: normal 14px/1em 'eurostile-bold'
+                    }
+                }
+            }
+        }
+    }
+    a.sisea-age{
+        font-family: 'eurostile-bold';
+        font-size: 14px;
+        color: #444;
+    }
+    h3{ 
+        font-size: 40px;
+        font-family: normal 13px/1em $eurostile_bold;
+        color: #444;
+        a{
+            color: #eb7932;
+            font-family: $eurostile_bold;
+            font-size: 15px;
+        }
+    }
+    .sisea-result-pages { font: normal 14px/1em $eurostile_bold; }
+    .sisea-result { /*background-color: ;*/ }
+    .sisea-results{
+        font: $eurostile_bold;
+        size: 14px;
+        color: #4444;
+    }
+    .sisea-paging {
+        color: #eb7932;
+        margin-right: 50px;
+        float: right;
+    }
+    .titulo-descargas {
+        font-family: $eurostile_bold;
+        color: #474747;
+        font-size: 30px;
+        height: 10px;
+        margin-bottom: 30px;
+        margin-left: 0px;
+    }
+}

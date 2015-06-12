@@ -1,0 +1,16 @@
+<!-- $stylesheet = galerias-main.css -->
+<!-- @import head -->
+
+    <body>
+        [[*content]]
+      <!-- @import scripts -->
+        <script src="[[++site_url]]assets/templates/anpasa/colorbox/jquery.colorbox.js"></script>
+        <script type="text/javascript" src="[[++site_url]]assets/js/slimbox/js/slimbox2.js"></script>
+        <script>
+          $(document).ready(function(){
+            //Examples of how to assign the ColorBox event to elements
+            $("a[rel='galerie']").colorbox();
+        });
+      </script>
+    </body>
+</html>

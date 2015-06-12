@@ -1,0 +1,200 @@
+#contenedor
+    position: relative
+    z-index: 1
+#cabecera
+    height: 150px
+    width: 1024px
+    margin: 0px auto 0px auto
+    .botonera
+        height: 120px
+        width: 1024px
+        float: left
+        position: relative
+        z-index: 1
+    .centro
+        float: left
+        padding: 35px 25px 0px 40px
+        width: 550px
+    .logo
+        margin-left: 22px
+    .izquierda
+        float: left
+        margin: 0px 0px 0px 0px
+    .derecha
+        float: left
+        margin: 0px 0px 0px 0px
+    .buscador
+        padding: 40px 0px 0px 0px
+    .contacto-gris
+        font-family: Trebuchet, Tahoma
+        color: #606e6e
+        font-size: 10px
+        padding: 0px 0px 0px 00px
+        text-align: right
+    .contacto-naranja
+        color: #ed6300
+        font-family: Trebuchet, Tahoma
+        font-size: 11px
+        padding: 0px 0px 0px 00px
+        text-align: right
+    a
+        &.contacto-naranja
+            font-family: Trebuchet, Tahoma
+            color: #ed6300
+            font-size: 11px
+            padding: 0px 0px 0px 00px
+            text-align: right
+input.rounded:focus
+    background-image: url('http://www.kirupa.com/images/search.png') no-repeat scroll 270px -10px transparent
+    border-color: #339933
+#buscador
+    input[type=search]
+        border: 1px solid #ccc
+        border-radius: 10px
+        font-size: 12px
+        padding: 4px 7px
+        outline: 0
+        -webkit-appearance: none
+    input[type=text]
+        background: none
+        background-color:transparent
+        border: 0px solid transparent
+        outline:none
+        padding: 0
+        text-align: right
+        width: 110px
+    input[type=submit]
+        background: url("lupita.png")
+        border: none
+        padding: 0
+input[type=text]
+    background: none transparent
+    border: 0px solid transparent
+    font-family: Trebuchet, Tahoma
+    font-size: 12px
+    text-align: left
+    margin-left: 2px
+    outline: none
+    padding: 0
+    width: 105px
+input[type=submit]
+    background: url("imagenes/lupita.png") transparent
+    border: none
+    padding: 0
+.busca
+    background-color: #fff
+    border: 0px solid #ccc
+    border-radius: 10px
+    width: 160px
+#breadCrumbsContainer
+    a
+        color: #EB7932
+        &:hover
+            color: #EB7932
+.espacio
+    margin: 0px auto 0px auto
+    position: relative
+    width: 1024px
+    z-index: 0
+.bc_li
+    color: #606e6e
+    float: left
+    font-family: Trebuchet, Tahoma
+    font-size: 13px
+    list-style-type: none
+    padding: 0px 4px 0px 0px
+    text-align: right
+
+/*********************************/
+
+/*
+    #cabecera
+        height: 150px
+        width: 1024px
+        margin: 0px auto 0px auto
+        .botonera
+            height: 120px
+            width: 1024px
+            float: left
+            .centro
+                @extend .clearfix
+                float: left
+                padding: 50px 25px 0px 40px
+                width: 550px
+                #wrapper_menu
+                    @extend .clearfix
+                    display: block
+                    height: 2em
+                    width: 38.57em
+                    .menu
+                        @extend .clearfix
+                        display: block
+                        float: left
+                        width: 36.57%
+                        .menusub
+                            @extend .clearfix
+            .izquierda
+                @extend .clearfix
+                .logo
+                    @extend .clearfix
+                    display: block
+                    margin-left: 22px
+            .izquierda, .derecha
+                float: left
+                margin: 0px 0px 0px 0px
+            .derecha
+                float: right
+        .buscador
+            padding: 40px 0px 0px 0px
+        .contacto-gris
+            font-family: Trebuchet, Tahoma
+            color: #606e6e
+            font-size: 10px
+            padding: 0px 0px 0px 00px
+            text-align: right
+        .contacto-naranja
+            font-family: Trebuchet, Tahoma
+            color: #ed6300
+            font-size: 11px
+            padding: 0px 0px 0px 00px
+            text-align: right
+    #buscador
+        input[type=text]
+            text-align: right
+            width: 80px
+            outline:none
+            padding: 0
+            border: none
+            background: none
+            background-color:transparent
+            border: 0px solid
+        input[type=submit]
+            background: url("lupita.png")
+            padding: 0
+            border: none
+            background: none
+    .busca
+        width: 160px
+        background-color: #fff
+        border: 0px solid #ccc
+        -moz-border-radius: 10px
+        -webkit-border-radius: 10px
+        border-radius: 5px
+    #breadCrumbsContainer
+        a
+            color: #EB7932
+            &:hover
+                color: #EB7932
+    .espacio
+        width: 1024px
+        margin: 0px auto
+    .bc_li
+        float:left
+        list-style-type: none
+        //list-style-image: url('descargas.png')
+        font-family: Trebuchet, Tahoma
+        color: #606e6e
+        font-size: 13px
+        padding: 0px 4px 0px 0px
+        text-align: right */
+@import "breadcrumbs"

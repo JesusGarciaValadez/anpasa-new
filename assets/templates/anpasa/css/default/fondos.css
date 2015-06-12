@@ -1,0 +1,55 @@
+body {
+	background:#ecf4f7 url(fondos/fondo.jpg) top left no-repeat;
+}
+
+/** comienza cintillo */
+.captcha .controles ,
+.cintillo {
+	 background: #990033; 
+}
+
+
+.footer .guias  {
+	background: url(fondos/fondo3.png) top right no-repeat;
+}
+
+
+
+
+/** Comienza banner */
+.formulario
+	{
+	background: url(fondos/fondo2.png) repeat;
+	}
+.banner .indice {
+	background:url(fondos/indicador_gris.png);
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fondos/indicador_gris.png', sizingMethod='scale');
+}
+.banner .indice .aguja{
+	background:url(fondos/indicador_rojo.png);
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fondos/indicador_rojo.png', sizingMethod='scale');
+}
+/**Termina Banner */
+
+
+/** Comienza cuerpo */
+
+
+.formulario .extras .boton ,
+.formulario .campos  .selects .inputtext,
+.formulario .campos .campo label{
+	background:#f5f5f5;
+}
+.formulario .extras .boton2{
+	background:#990033;
+	color:#ffffff;
+}
+.formulario .extras .boton2:hover{
+	background:#f5f5f5;
+	color:#990033;
+}
+.formulario .campos .select,
+.formulario .campos .campo .inputtext{
+	background:transparent;
+	}
+

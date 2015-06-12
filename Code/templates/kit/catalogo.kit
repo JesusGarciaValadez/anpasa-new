@@ -1,0 +1,38 @@
+<!-- $stylesheet = catalogo-main.css -->
+<!-- @import head -->
+    <body>
+        <div id="contenedor">
+            <header>
+                [[$cabecera_home]]
+            </header>
+        </div>
+        <div id="submenu">
+            <div class="block" >
+                <div class="menu-centrado">
+                    [[!Wayfinder?
+                        &startId=`[[*parent]]`
+                        &level=`1`
+                        &outerTpl=`outerTpl`
+                        &rowTpl=`submenu`
+                        &lastClass=`submenu`
+                        &firstClass=`submenu`
+                    ]]
+                </div>
+            </div>
+        </div>
+        <div id="catalogo">
+            <div class="block" >
+                <div class="centro">
+                    <ul class="pageList clearfix" style="margin-bottom:10px; margin-left:450px;">[[!+page.nav]]</ul>
+                    [[*content]]
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-final">
+                [[$footer-gris]]
+            </div>
+        </footer>
+        <!-- @import scripts -->
+    </body>
+</html>

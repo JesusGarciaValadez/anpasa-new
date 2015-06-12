@@ -1,0 +1,31 @@
+/*fuentes*/
+
+@font-face {
+  font-family: 'eurostile-bold';
+  src: url('../fuentes/eurostile.eot?') format('eot'), url('../fuentes/eurostile.woff') format('woff'), url('../fuentes/eurostile.ttf') format('truetype');
+}
+
+
+.eurostile-bold{
+	font-family:'eurostile-bold';
+}
+
+
+
+@font-face {
+  font-family: 'eurostile-bold-oblique';
+  src: url('../fuentes/eurostile_bold_oblique.eot?') format('eot'), url('../fuentes/eurostile_bold_oblique.woff') format('woff'), url('../fuentes/eurostile_bold_oblique.ttf') format('truetype');
+}
+
+
+.eurostile-bold-oblique{
+	font-family:'eurostile-bold-oblique';
+}
+
+
+@font-face {
+  font-family: 'trebuchet';
+  src: url('../fuentes/trebuchet.eot?') format('eot'), url('../fuentes/trebuchet.woff') format('woff'), url('../fuentes/trebuchet.ttf') format('truetype');
+}
+
+

@@ -1,0 +1,238 @@
+#contacto{
+min-height: 400px;
+margin: 0px auto;
+padding-bottom:170px;   /* Height of the footer */
+width: 100%;
+	
+}
+
+
+#contacto .encabezado-contenidos {
+font-family: "eurostile-bold-oblique", sans-serif;
+color: #474747;
+text-transform: uppercase;
+font-size: 28px;
+}
+
+
+#contacto .formulario{
+	height: 300px;
+	background: #edf5f8;
+}
+
+#contacto .columna-contacto{
+	float:left;
+	min-width: 250px;
+}
+
+#contacto .pregunta-formulario{
+	font-family:Trebuchet, Tahoma;
+	color:#606e6e;
+	font-size: 9px;
+	padding: 5px 0px 4px 0px;
+}
+
+
+#contacto  .formulario-centrado{
+	margin: 0px auto;
+
+}
+
+#contacto .bloque-oficinas{
+	width:800px;
+	margin: 0px auto;
+
+}
+
+
+#contacto .oficinas{
+}
+
+#contacto .oficina{
+	margin: 20px 30px 0px 0px;
+	min-height: 160px
+
+}
+
+
+
+
+/*inicio contacto */
+
+#contacto  .bloque-formulario{
+	padding-top: 25px;
+	width:1000px
+}
+
+#contacto .bloque-contacto-correos{
+	float:left;
+	width: 300px;
+}
+
+
+#contacto .contacto-formulario{
+	float:left;
+	width:500px;
+}
+
+#contacto .contacto-formulario{
+	 border-radius: 10px;
+	 background:#cfe2e9;
+	 padding: 10px 10px 10px 10px;
+}
+
+#contacto .contacto-izquierdo{
+	float: left;
+	margin: 10px;	
+}
+#contacto .contacto-derecho{
+	float: left;
+	margin: 10px;
+}
+
+
+#contacto .correo{
+	font-family: "eurostile-bold", sans-serif; 
+	color:#e77b18;
+	font-size:15px;
+}
+
+
+
+
+	#ajax-form {
+		width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0px;
+	}
+	label {
+		display: block;
+	}
+
+	.error {
+		color: red;
+		display: none;
+	}
+	#ajaxsuccess {
+		color: #474747;
+		display: none;
+		width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0px;
+	}
+
+
+
+#contacto  input, textarea{
+	margin-bottom: 5px;
+	padding: 5px;
+	color:#606e6e;
+	background:#e7f0f5;
+	border: 0;
+	font-size: 12px;
+	font-family:Trebuchet, Tahoma;
+}
+
+#contacto input,textarea{
+	width: 216px;
+
+}
+#contacto textarea{
+	height: 64px;
+	
+}
+/*fin contacto */
+
+
+ input[type="radio"] {
+    display:none;
+}
+
+
+input[type="radio"] +label  {
+    color:#f2f2f2;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+}
+
+input[type="radio"]  + label {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(check_radio_sheet.png) -38px top no-repeat;
+background:url("radio.png") 0px top no-repeat;
+
+    cursor:pointer;
+}
+
+ input[type="radio"]:checked + label  {
+    background:url(check_radio_sheet.png) -57px top no-repeat;
+background:url("radio.png") -19px top no-repeat;
+}
+
+
+
+
+
+#contacto .bloque-contacto-horizontal{
+	float: left;
+	margin: 20px 30px 20px 0px;
+	
+}
+
+
+
+#contacto .titulo{
+	font-family: "eurostile-bold", sans-serif;
+	font-size: 30px;
+	color: #9fb0b4;
+line-height:140%	
+}
+
+#contacto .ciudad{
+	font-family: "eurostile-bold", sans-serif;	
+	font-size: 24px;
+	color: #eb7931;
+	line-height:100%
+}
+
+#contacto .direccion{
+	font-family:Trebuchet, Tahoma;
+	color:#606e6e;
+	font-size: 12px;
+}
+
+
+.mayusculas{
+	text-transform: uppercase;
+}
+
+
+#contacto .ubicacion{
+	font-family:Trebuchet, Tahoma;
+	color:#eb7931;
+	font-size: 12px;
+}
+
+
+
+.boton {
+    border: none;
+    background: url('enviar.png') no-repeat top left;
+    padding: 2px 8px;
+    width:92px;
+    height:36px;
+}
+
+
+.boton:hover {
+    border: none;
+    background: url('enviar.png') no-repeat top left;
+    padding: 2px 8px;
+    width:92px;
+    height:36px;
+}

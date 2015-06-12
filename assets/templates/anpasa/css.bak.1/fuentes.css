@@ -1,0 +1,38 @@
+/*fuentes*/
+
+@font-face {
+    font-family: 'eurostile-bold';
+    src: url('http://www.anpasa.com/assets/templates/anpasa/fuentes/eurostile.eot?'); 
+    src: url('http://www.anpasa.com/assets/templates/anpasa/fuentes/eurostile.eot?#iefix') format('embedded-opentype'), 
+         url('http://www.anpasa.com/assets/templates/anpasa/fuentes/eurostile.woff') format('woff'), 
+         url('http://www.anpasa.com/assets/templates/anpasa/fuentes/eurostile.ttf') format('truetype'), 
+         url('http://www.anpasa.com/assets/templates/anpasa/fuentes/eurostile.svg#eurostile-bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'eurostile-bold-oblique';
+    src: url('http://www.anpasa.com/assets/templates/anpasa/fuentes/eurostile_bold_oblique.eot?');
+    src: url('http://www.anpasa.com/assets/templates/anpasa/fuentes/eurostile_bold_oblique.eot?#iefix') format('embedded-opentype'), 
+         url('http://www.anpasa.com/assets/templates/anpasa/fuentes/eurostile_bold_oblique.woff') format('woff'), 
+         url('http://www.anpasa.com/assets/templates/anpasa/fuentes/eurostile_bold_oblique.ttf') format('truetype'), 
+         url('http://www.anpasa.com/assets/templates/anpasa/fuentes/eurostile_bold_oblique.svg#eurostile-bold-oblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'trebuchet';
+    src: url('http://www.anpasa.com/assets/templates/anpasa/fuentes/trebuchet.eot?');
+    src: url('http://www.anpasa.com/assets/templates/anpasa/fuentes/trebuchet.eot?#iefix') format('embedded-opentype'), 
+         url('http://www.anpasa.com/assets/templates/anpasa/fuentes/trebuchet.woff') format('woff'), 
+         url('http://www.anpasa.com/assets/templates/anpasa/fuentes/trebuchet.ttf') format('truetype'), 
+         url('http://www.anpasa.com/assets/templates/anpasa/fuentes/trebuchet.svg#trebuchet') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.eurostile-bold{
+	font-family:'eurostile-bold';
+}
+.eurostile-bold-oblique{
+	font-family:'eurostile-bold-oblique';
+}

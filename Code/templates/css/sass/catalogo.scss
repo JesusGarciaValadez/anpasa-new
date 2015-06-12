@@ -1,0 +1,129 @@
+#catalogo{
+    min-height:500px;
+}
+#catalogo .componente{
+    display: block;
+    font-family: Trebuchet, Tahoma;
+    margin: 0 auto;
+    min-height: 250px;
+    width:700px;
+}
+#catalogo .cabecera{
+    background-color: #e97932;
+    color: #fff;
+    height: 30px;
+    margin-bottom: 4px;
+}
+#catalogo .sku{
+    float:left;
+    margin-left:30px;
+    padding-top:4px;
+    font-size:18px;
+    text-transform:uppercase;
+}
+#catalogo .nombre{
+    float:right;
+    margin-right:30px;
+    padding-top:4px;
+    font-size:18px;
+}
+#catalogo .contenido:before,
+#catalogo .contenido:after {
+    content: " ";
+    display: table;
+}
+#catalogo .contenido:after {
+    clear: both;
+}
+#catalogo .contenido {
+    *zoom: 1;
+}
+#catalogo .imagen{
+    width:220px;
+    float:left;
+}
+#catalogo img {
+    width: 220px;
+    height: 200px;
+}
+#catalogo .datos{
+    width: 470px;
+    min-height: 170px;
+    float: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    color: #474747;
+}
+#catalogo .linea{
+    clear: both;
+    display: block;
+    margin: 4px 0;
+}
+#catalogo .linea:before,
+#catalogo .linea:after {
+    content: " ";
+    display: table;
+}
+#catalogo .linea:after {
+    clear: both;
+}
+#catalogo .linea {
+    *zoom: 1;
+}
+#catalogo .concepto{
+    text-align: left;
+    float:left;
+    width:130px;
+    text-transform: capitalize;
+    font-size:14px;
+}
+#catalogo .descripcion{
+    text-align: left;
+    float:left;
+    font-size:14px;
+    max-width: 340px;
+}
+#catalogo .block {
+    text-align: center;
+    margin: 20px;
+}
+#catalogo .block:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: -0.25em; /* Adjusts for spacing */
+}
+#catalogo .centro {
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+#catalogo .paging{
+    float: right;
+    font-family: Trebuchet;
+    font-size: 20px;
+}
+#catalogo .pageList{
+    color: #222;
+}
+#catalogo li{
+    color: #fff;
+    float: left;
+    font-family: Trebuchet;
+    font-size: 15px;
+    padding-right: 35px;
+    vertical-align: bottom;
+}
+#catalogo ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+#catalogo a {
+    color: #e97932;
+    font-family: Trebuchet;
+}
+#catalogo a.active {
+    color: #474747
+}
+#catalogo .block .centro .paging ul li a.active{ color: #444; }

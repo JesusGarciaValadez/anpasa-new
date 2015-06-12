@@ -1,0 +1,50 @@
+a img {
+	border: 0 none;
+}
+/** comienza cintillo */
+
+.cintillo {
+	 border: 1px solid #990033;
+	   color: #FFF;
+}
+.footer .guias,
+.twitterlink .link{
+	color:#ffffff;
+}
+
+/** Termina Cintillo */
+
+
+
+/**Comienza header */
+.barrasocial .leyenda {
+	color: #a40234;
+}
+/** Termina header */
+
+
+/** Comienza cuerpo */
+.banner .descripcion ,
+.formulario .extras .news .link,
+.formulario .campos .leyenda{
+	color:#990033;
+}
+.telefonos,
+.telefonos a,
+.copyright,
+.copyright a,
+.formulario .extras .links  .link,
+.formulario .campos label{
+	color:#666;
+}
+
+.formulario .extras .boton ,
+.formulario .campos .select,
+.formulario .campos  .selects .inputtext,
+.formulario .campos .campo .inputtext{
+	border:0 none;
+	}
+.formulario .extras .boton {
+	margin:5px;
+}
+/** termina cuerpo */
