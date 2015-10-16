@@ -4,7 +4,7 @@
 <!--[if IE 8]>         <html lang="es" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="es" class="no-js"> <!--<![endif]-->
     <head>
-        <title>[[++site_name]]</title>
+        <title>[[*pagetitle]] - [[++site_name]]</title>
         <meta http-equiv="Content-Type" content="text/html; charset=[[++modx_charset]]" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <meta http-equiv="pragma" content="no-cache" />
@@ -31,26 +31,24 @@
         <div id="submenu">
             <div class="block" >
                 <div class="menu-centrado">
-                     [[!Wayfinder?
-                         &startId=`[[*mparent]]`
-                         &level=`1`
-                         &outerTpl=`outerTpl`
-                         &rowTpl=`submenu`
-                         &lastClass=`submenu`
-                         &firstClass=`submenu`
-                         &hereClass=`active`
-                         &ignoreHidden=`1`
-                     ]]
+                    [[!Wayfinder?
+                        &startId=`[[*mparent]]`
+                        &level=`1`
+                        &outerTpl=`outerTpl`
+                        &rowTpl=`submenu`
+                        &lastClass=`submenu`
+                        &firstClass=`submenu`
+                        &hereClass=`active`
+                        &ignoreHidden=`1`
+                    ]]
                 </div>
             </div>
         </div>
-        <div>
-            <div id="galeria" style="min-height:700px;">
-                [[!If? &subject=`[[*prettyGalleryAlbum]]` &operator=`!empty` &then=`[[$prettyGallery]]`]]
-                [[!If? &subject=`[[*prettyGalleryAlbum]]` &operator=`!empty` &then=`[[$prettyGalleryScripts]]`]]
-            </div>
+        <div id="galeria" class="clearfix">
+            [[!If? &subject=`[[*prettyGalleryAlbum]]` &operator=`!empty` &then=`[[$prettyGallery]]`]]
+            [[!If? &subject=`[[*prettyGalleryAlbum]]` &operator=`!empty` &then=`[[$prettyGalleryScripts]]`]]
         </div>
-        <div>
+        <div class="footer-final clearfix">
             <footer>
                 [[$footer-gris]]
             </footer>
